@@ -1,0 +1,57 @@
+
+########################################################################
+#      Date:           Tue 24 Oct 2023 10:20:47 PM PDT
+#    Job ID:           2400018.v-qsvr-1.aidevcloud
+#      User:           u205993
+# Resources:           cput=75:00:00,neednodes=1:gpu:ppn=2,nodes=1:gpu:ppn=2,walltime=06:00:00
+########################################################################
+
+oneAPI env is OK!
+oneAPI env is OK!
+oneAPI env is OK!
+[opencl:cpu:0] Intel(R) OpenCL, 11th Gen Intel(R) Core(TM) i9-11900KB @ 3.30GHz 3.0 [2023.16.7.0.21_160000]
+[opencl:gpu:1] Intel(R) OpenCL HD Graphics, Intel(R) UHD Graphics [0x9a60] 3.0 [22.43.24595.35]
+[ext_oneapi_level_zero:gpu:0] Intel(R) Level-Zero, Intel(R) UHD Graphics [0x9a60] 1.3 [1.3.24595]
+make: 'BM3Ddenoising' is up to date.
+
+Read input image...done.
+image size :
+ - width          = 512
+ - height         = 512
+ - nb of channels = 1
+
+Add noise [sigma = 25] ...done.
+
+Number of threads which will be used: 1step 1...for1: 138.972 ms
+for2: 0.121571 ms
+for4: 44.4033 ms
+for5 == copy patch_table back : 1.57657 ms
+precompute bm 耗时: 1151.15 ms
+done.
+step 2...for1: 11.7589 ms
+for2: 0.042833 ms
+for4: 23.0021 ms
+for5 == copy patch_table back : 1.58942 ms
+precompute bm 耗时: 827.136 ms
+done.
+bm3d run time:  2391 ms
+
+For noisy image :
+PSNR: 34.0349
+RMSE: 5.0675
+
+(basic image) :
+PSNR: 33.3004
+RMSE: 5.51471
+
+
+
+Compute difference...done.
+
+Save images...done.
+
+########################################################################
+# End of output for job 2400018.v-qsvr-1.aidevcloud
+# Date: Tue 24 Oct 2023 10:21:06 PM PDT
+########################################################################
+
